@@ -2,8 +2,10 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casa Santos Alimentos</title>
-  <link rel="icon" type="image/x-icon" href="favicon.png">
+
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
@@ -22,83 +24,142 @@
     .container {
       max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
+    /* HERO */
     .hero {
-      padding: 80px 20px;
+      padding: 50px 20px;
     }
 
     .logo {
-      max-width: 300px;
+      width: 70%;
+      max-width: 250px;
       margin-bottom: 20px;
     }
 
     .title {
-      font-size: 32px;
+      font-size: 24px;
       margin-bottom: 10px;
     }
 
     .subtitle {
-      font-size: 18px;
+      font-size: 16px;
       color: #7A6A63;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+    }
+
+    .badges {
+      margin-bottom: 20px;
     }
 
     .badges span {
       display: inline-block;
       background: #D8E2DC;
-      padding: 8px 14px;
+      padding: 6px 10px;
       border-radius: 20px;
-      margin: 5px;
-      font-size: 14px;
+      margin: 4px;
+      font-size: 12px;
     }
 
+    .cta {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #5C4A42;
+      color: white;
+      padding: 16px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* SEÇÕES */
     .section {
-      margin-top: 60px;
+      margin-top: 40px;
     }
 
     .card {
       background: #FFFFFF;
-      padding: 30px;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    .cta {
-      margin-top: 40px;
+    /* QUEM SOMOS */
+    .card-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
     }
 
-    .btn {
-      background: #5C4A42;
-      color: white;
-      padding: 14px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
+    .familia-img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
     }
 
+    /* FOOTER */
     .footer {
-      margin-top: 80px;
+      margin-top: 60px;
       font-size: 12px;
       color: #999;
     }
 
+    /* DESKTOP */
     @media (min-width: 768px) {
-        .card-flex {
-            flex-direction: row !important;
-            text-align: left;
-        }
+
+      .container {
+        padding: 40px 20px;
+      }
+
+      .hero {
+        padding: 80px 20px;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .badges span {
+        font-size: 14px;
+        padding: 8px 14px;
+      }
+
+      .card {
+        padding: 30px;
+      }
+
+      .card-flex {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+      }
+
+      .familia-img {
+        max-width: 400px;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
   <div class="container hero">
 
-    <!-- LOGO -->
     <img src="logo.png" class="logo" alt="Casa Santos">
 
     <h1 class="title">Alimentos seguros para quem você mais ama</h1>
@@ -115,45 +176,40 @@
     </div>
 
     <div class="cta">
-      <a href="https://wa.me/SEUNUMERO" class="btn">
+      <a href="https://wa.me/55119878427398" class="btn">
         Fale conosco no WhatsApp
       </a>
     </div>
 
   </div>
 
-  <!-- HISTÓRIA -->
- <div class="container section">
-  <div class="card" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+  <!-- QUEM SOMOS -->
+  <div class="container section">
+    <div class="card card-flex">
 
-    <img src="familia.jpeg" alt="Família Santos"
-      style="width: 100%; max-width: 800px; border-radius: 12px; object-fit: cover;">
+      <img src="familia.jpeg" alt="Família Santos" class="familia-img">
 
-    <div>
-      <h2>Quem somos</h2>
+      <div>
+        <h2>Quem somos</h2>
 
-      <p>
-        Somos a família Santos.
-      </p>
+        <p>Somos a família Santos.</p>
 
-      <p>
-        No final de 2025, descobrimos alergias alimentares na nossa filha mais velha.
-        E como muitas famílias, ficamos perdidos no começo.
-      </p>
+        <p>
+          No final de 2025, descobrimos alergias alimentares na nossa filha mais velha.
+          E como muitas famílias, ficamos perdidos no começo.
+        </p>
 
-      <p>
-        Foi dessa necessidade real que nasceu a Casa Santos:
-        um espaço criado para oferecer alimentos seguros,
-        confiáveis e feitos com carinho.
-      </p>
+        <p>
+          Foi dessa necessidade real que nasceu a Casa Santos:
+          um espaço criado para oferecer alimentos seguros,
+          confiáveis e feitos com carinho.
+        </p>
 
-      <p>
-        Da nossa casa para a sua.
-      </p>
+        <p>Da nossa casa para a sua.</p>
+      </div>
+
     </div>
-
   </div>
-</div>
 
   <!-- DIFERENCIAIS -->
   <div class="container section">
@@ -171,11 +227,12 @@
   <div class="container section">
     <h2>Fale com a gente</h2>
 
-    <a href="https://wa.me/119878427398" class="btn">
+    <a href="https://wa.me/55119878427398" class="btn">
       Pedir pelo WhatsApp
     </a>
   </div>
 
+  <!-- FOOTER -->
   <div class="container footer">
     Casa Santos Alimentos • Cuidado que nutre
   </div>
